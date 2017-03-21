@@ -1,4 +1,5 @@
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="horiz-cal-hour.html">
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="my-view1">
@@ -6,16 +7,2157 @@
     <style include="shared-styles">
       :host {
         display: block;
+      }
 
-        padding: 10px;
+      .time-bar {
+      }
+      .hour-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        flex-shrink: 0;
+      }
+      .hour-time {
+        width: 120px;
+        min-width: 120px;
+        height: 100vh;
+        padding: 0 0 0 10px;
+        list-style-type: none;
+        border-left: 1px solid rgba(200,200,200,0.5);
+      }
+      .club-location {
+        position: fixed;
+        color: white;
+        background: black;
+        width: 100vw;
+        left: 0;
+        padding: 0px 0px 0px 12px;
+        height: 40px;
+        font-size: 10px;
+        line-height: 40px;
+      }
+      .class-name {
+        margin-top: 20px;
+        position: fixed;
+        padding-left: 0;
+        font-size: 8px;
+      }
+      .square-wrapper {
+        height: 50px;
+        width: 50%;
+        min-width: 50%;
+        margin-left: -10px;
+        border-bottom: 1px solid rgba(200,200,200,0.5);
+      }
+      .square-wrapper-1 {
+        margin-top: 40px;
+        background: lightcyan;
+        border-top: 1px solid rgba(200,200,200,0.5);
+      }
+      .hour {
+        height: 40px;
+      }
+      .testtt {
+        width: 50%;
+        float: right;
+      }
+      .top-slot-wrapper {
+        display: flex;
+        margin-top: 55px;
+        margin-left: -11px;
+        height: 50px;
+        flex-flow: row nowrap;
+      }
+      .bottom-slot-wrapper {
+        display: flex;
+        margin-top: 40px;
+        margin-left: -11px;
+        height: 50px;
+        flex-flow: row nowrap;
+      }
+      .blank-slot-wrapper {
+        display: flex;
+        margin-left: -11px;
+        height: 50px;
+        flex-flow: row nowrap;
+      }
+      .testtt1 {
+        width: 50%;
+        border-right: 1px solid rgba(200,200,200,0.5);
+        border-bottom: 1px solid rgba(200,200,200,0.5);
+      }
+      .testtt2 {
+        width: 50%;
+        border-bottom: 1px solid rgba(200,200,200,0.5);
       }
     </style>
 
-    <div class="card">
-      <h1>View One</h1>
-      <p>Ut labores minimum atomorum pro. Laudem tibique ut has.</p>
-      <p>Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Cu mei vide viris gloriatur, at populo eripuit sit.</p>
+
+    <div class="scroll-wrapper">
+      <div class="time-bar">
+        <div class="hour-wrapper">
+          <div class="hour-time">
+
+            <p class="hour">11am</p>
+
+            <div class="club-location">Sydney CBD</div>
+
+            <div class="top-slot-wrapper">
+              <div class="testtt1">Test1</div>
+              <div class="testtt2"></div>
+            </div>
+
+            <div class="club-location">Sydney CBD</div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1">Test3</div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+
+          <div class="hour-time">
+            <p class="hour">12pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">1pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">2pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">3pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">4pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">5pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">6pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">7pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">8pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">9pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+
+          <!-- New Day -->
+          <div class="hour-time">
+            <p class="hour"><strong>6am</strong></p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">7am</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">8am</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">9am</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">10am</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">11am</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">12pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">1pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">2pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">3pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">4pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">5pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">6pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">7pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">8pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">9pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+
+          <!-- New Day -->
+          <div class="hour-time">
+            <p class="hour"><strong>6am</strong></p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">7am</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">8am</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">9am</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">10am</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">11am</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">12pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">1pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">2pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">3pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">4pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">5pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">6pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">7pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">8pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+          <div class="hour-time">
+            <p class="hour">9pm</p>
+            <div class="top-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="bottom-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+            <div class="blank-slot-wrapper">
+              <div class="testtt1"></div>
+              <div class="testtt2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- <horiz-cal-hour value="11am"></horiz-cal-hour> -->
+
+    <!-- <div class="scroll-scale">
+      <div class="time-bar">
+        <h3 class="scroll-club">Sydney CBD - Barangaroo Titanium</h3> -->
+        <!-- Day 1 -->
+
+        <!-- <div class="hour-time">11am</div>
+        <div class="hour-time">12pm</div>
+        <div class="hour-time">1pm</div>
+        <div class="hour-time">2pm</div>
+        <div class="hour-time">3pm</div>
+        <div class="hour-time">4pm</div>
+        <div class="hour-time">5pm</div>
+        <div class="hour-time">6pm</div>
+        <div class="hour-time">7pm</div>
+        <div class="hour-time">9pm</div>
+        <div class="hour-time">10pm</div>
+        <div class="hour-time">11pm</div>
+        <div class="hour-time">5am</div>
+        <div class="hour-time">6am</div>
+        <div class="hour-time">7am</div>
+        <div class="hour-time">8am</div>
+        <div class="hour-time">9am</div>
+        <div class="hour-time">10am</div> -->
+      <!-- </div>
+    </div> -->
   </template>
 
   <script>
